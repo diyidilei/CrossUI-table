@@ -294,6 +294,7 @@ xui.Class('App', 'xui.Module',{
                 .setLeft("1.25em")
                 .setTop("10.416666666666666em")
                 .setWidth("18em")
+                .setVisibility("hidden")
                 .setLabelSize("8em")
                 .setLabelCaption("操作")
                 .setValue("绘制")
