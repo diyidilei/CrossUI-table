@@ -118,7 +118,19 @@ xui.Class('App', 'xui.Module',{
                 ])
                 .afterRowActive([
                     {
-                        "desc":"动作 1",
+                        "desc":"获取变量",
+                        "type":"control",
+                        "target":"xui_ui_treegrid2",
+                        "args":[
+                            "{page.xui_ui_treegrid2.getHotRow()}",
+                            "global",
+                            "item"
+                        ],
+                        "method":"getHotRow",
+                        "redirection":"other:callback:call"
+                    },
+                    {
+                        "desc":"调用函数",
                         "type":"other",
                         "target":"callback",
                         "args":[
@@ -274,28 +286,6 @@ xui.Class('App', 'xui.Module',{
                 .setValue("绘制")
             );
             
-            append(
-                xui.create("xui.UI.HTMLButton")
-                .setHost(host,"xui_ui_htmlbutton30")
-                .setLeft("35em")
-                .setTop("41.666666666666664em")
-                .setWidth("12.333333333333334em")
-                .setHeight("4.333333333333333em")
-                .setCaption("绘制")
-                .onClick([
-                    {
-                        "desc":"动作 1",
-                        "type":"other",
-                        "target":"callback",
-                        "args":[
-                            "{page.functions.draw}"
-                        ],
-                        "method":"call",
-                        "event":1
-                    }
-                ])
-            );
-            
             return children;
             // ]]Code created by CrossUI RAD Studio
         },
@@ -319,7 +309,13 @@ xui.Class('App', 'xui.Module',{
         functions:{
             "draw":{
                 "desc":"",
-                "params":[ ],
+                "params":[
+                    {
+                        "id":"res",
+                        "type":"Hash",
+                        "desc":"{global.item}"
+                    }
+                ],
                 "actions":[
                     {
                         "desc":"动作 1",
@@ -330,7 +326,7 @@ xui.Class('App', 'xui.Module',{
                         ],
                         "method":"call"
                     },
-                    function(){
+                    function(res){
                         window.parent.document.getElementById("drap").contentWindow.drawMap()
                     }
                 ]
