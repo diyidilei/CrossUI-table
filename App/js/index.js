@@ -140,13 +140,6 @@ xui.Class('App', 'xui.Module',{
                         "okFlag":"_prompt_ok",
                         "koFlag":"_prompt_cancel",
                         "event":1,
-                        "conditions":[
-                            {
-                                "left":"{temp.okData} ",
-                                "symbol":"non-empty",
-                                "right":""
-                            }
-                        ],
                         "onOK":3,
                         "onKO":4
                     }
