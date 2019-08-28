@@ -124,8 +124,7 @@ xui.Class('App', 'xui.Module',{
                         "args":[
                             "{page.xui_ui_treegrid2.getHotRow()}",
                             "global",
-                            "item",
-                            ""
+                            "item"
                         ],
                         "method":"getHotRow",
                         "redirection":"other:callback:call"
