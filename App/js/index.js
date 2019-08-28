@@ -204,6 +204,13 @@ xui.Class('App', 'xui.Module',{
                                 "right":""
                             }
                         ]
+                    },
+                    {
+                        "desc":"关闭弹出层",
+                        "type":"control",
+                        "target":"xui_ui_dialog2",
+                        "args":[ ],
+                        "method":"close"
                     }
                 ])
             );
@@ -219,6 +226,14 @@ xui.Class('App', 'xui.Module',{
                 .setCaption("添加数据")
                 .setFontSize("14px")
                 .onClick([
+                    {
+                        "desc":"打开对话框",
+                        "type":"control",
+                        "target":"xui_ui_dialog2",
+                        "args":[ ],
+                        "method":"showModal",
+                        "event":1
+                    },
                     {
                         "desc":"打开输入框",
                         "type":"other",
@@ -251,6 +266,13 @@ xui.Class('App', 'xui.Module',{
                                 "right":""
                             }
                         ]
+                    },
+                    {
+                        "desc":"关闭对话框",
+                        "type":"control",
+                        "target":"xui_ui_dialog2",
+                        "args":[ ],
+                        "method":"close"
                     }
                 ])
             );
