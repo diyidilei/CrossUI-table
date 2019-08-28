@@ -142,6 +142,25 @@ xui.Class('App', 'xui.Module',{
                         "event":1,
                         "onOK":3,
                         "onKO":4
+                    },
+                    {
+                        "desc":"增加数据",
+                        "type":"control",
+                        "target":"xui_ui_treegrid2",
+                        "args":[
+                            " {temp.okData}",
+                            null,
+                            null,
+                            false
+                        ],
+                        "method":"insertRows",
+                        "conditions":[
+                            {
+                                "left":" {temp.okData}",
+                                "symbol":"non-empty",
+                                "right":""
+                            }
+                        ]
                     }
                 ])
             );
