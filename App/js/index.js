@@ -125,7 +125,7 @@ xui.Class('App', 'xui.Module',{
                             "{page.functions.draw}",
                             "none",
                             "",
-                            "{page.treegrid.getRowMap()}"
+                            "{page.xui_ui_treegrid2.getRowMap()}"
                         ],
                         "method":"call"
                     },
