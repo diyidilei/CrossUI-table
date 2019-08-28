@@ -116,6 +116,18 @@ xui.Class('App', 'xui.Module',{
                         ]
                     }
                 ])
+                .onRowSelected([
+                    {
+                        "desc":"动作 1",
+                        "type":"other",
+                        "target":"callback",
+                        "args":[
+                            "{page.functions.draw}"
+                        ],
+                        "method":"call",
+                        "event":2
+                    }
+                ])
             );
             
             append(
