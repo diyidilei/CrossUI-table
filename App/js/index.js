@@ -27,7 +27,7 @@ xui.Class('App', 'xui.Module',{
                 .setLeft("12.5em")
                 .setTop("5em")
                 .setWidth("37.5em")
-                .setHeight("28.333333333333332em")
+                .setHeight("34.166666666666664em")
                 .setCaption("数据表格")
             );
             
@@ -121,8 +121,9 @@ xui.Class('App', 'xui.Module',{
             host.xui_ui_panel4.append(
                 xui.create("xui.UI.Dialog")
                 .setHost(host,"xui_ui_dialog2")
-                .setLeft("2em")
-                .setTop("4.666666666666667em")
+                .setLeft("10.333333333333334em")
+                .setTop("10.5em")
+                .setZIndex(1003)
                 .setCaption("对话框")
                 .setMinBtn(false)
             );
@@ -212,7 +213,7 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"xui_ui_button53")
                 .setDirtyMark(false)
                 .setLeft("13.333333333333334em")
-                .setTop("35em")
+                .setTop("41.666666666666664em")
                 .setWidth("10.666666666666666em")
                 .setHeight("3.6666666666666665em")
                 .setCaption("添加数据")
@@ -252,6 +253,13 @@ xui.Class('App', 'xui.Module',{
                         ]
                     }
                 ])
+            );
+            
+            append(
+                xui.create("xui.UI.HiddenInput")
+                .setHost(host,"xui_ui_hiddeninput1")
+                .setName("btn")
+                .setValue("绘制")
             );
             
             return children;
