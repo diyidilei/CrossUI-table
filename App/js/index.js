@@ -108,7 +108,7 @@ xui.Class('App', 'xui.Module',{
                                 "value":"124.111"
                             },
                             {
-                                "value":"100.478"
+                                "value":"100.488"
                             },
                             {
                                 "value":"绘制"
