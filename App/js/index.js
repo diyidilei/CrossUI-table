@@ -47,14 +47,14 @@ xui.Class('App', 'xui.Module',{
                         "width":"9em"
                     },
                     {
-                        "id":"coordy",
-                        "caption":"坐标纬度",
+                        "id":"coordx",
+                        "caption":"坐标经度",
                         "type":"label",
                         "width":"8em"
                     },
                     {
-                        "id":"coordx",
-                        "caption":"坐标经度",
+                        "id":"coordy",
+                        "caption":"坐标纬度",
                         "type":"label",
                         "width":"9.5em"
                     },
@@ -121,8 +121,8 @@ xui.Class('App', 'xui.Module',{
             host.xui_ui_panel4.append(
                 xui.create("xui.UI.Dialog")
                 .setHost(host,"xui_ui_dialog2")
-                .setLeft("7em")
-                .setTop("11.333333333333334em")
+                .setLeft("2em")
+                .setTop("4.666666666666667em")
                 .setCaption("对话框")
                 .setMinBtn(false)
             );
@@ -130,6 +130,7 @@ xui.Class('App', 'xui.Module',{
             host.xui_ui_dialog2.append(
                 xui.create("xui.UI.Input")
                 .setHost(host,"xui_ui_input1")
+                .setName("name")
                 .setDirtyMark(false)
                 .setLeft("-0.4166666666666667em")
                 .setTop("2.0833333333333335em")
@@ -141,6 +142,7 @@ xui.Class('App', 'xui.Module',{
             host.xui_ui_dialog2.append(
                 xui.create("xui.UI.Input")
                 .setHost(host,"xui_ui_input2")
+                .setName("coordx")
                 .setDirtyMark(false)
                 .setLeft("-0.4166666666666667em")
                 .setTop("4.583333333333333em")
@@ -152,12 +154,57 @@ xui.Class('App', 'xui.Module',{
             host.xui_ui_dialog2.append(
                 xui.create("xui.UI.Input")
                 .setHost(host,"xui_ui_input3")
+                .setName("coordy")
                 .setDirtyMark(false)
                 .setLeft("-0.4166666666666667em")
                 .setTop("7.083333333333333em")
                 .setWidth("18em")
                 .setLabelSize("8em")
                 .setLabelCaption("坐标纬度")
+            );
+            
+            host.xui_ui_dialog2.append(
+                xui.create("xui.UI.HTMLButton")
+                .setHost(host,"xui_ui_htmlbutton4")
+                .setLeft("7.5em")
+                .setTop("11.666666666666666em")
+                .setWidth("8.25em")
+                .setHeight("3.0833333333333335em")
+                .setCaption("添加")
+                .onClick([
+                    {
+                        "desc":"储存数据",
+                        "type":"control",
+                        "target":"xui_ui_dialog2",
+                        "args":[
+                            "{page.xui_ui_dialog2.getFormValues()}",
+                            "global",
+                            "adddata"
+                        ],
+                        "method":"getFormValues",
+                        "redirection":"other:callback:call",
+                        "event":1
+                    },
+                    {
+                        "desc":"增加表格",
+                        "type":"control",
+                        "target":"xui_ui_treegrid2",
+                        "args":[
+                            "{global.adddata}",
+                            null,
+                            null,
+                            false
+                        ],
+                        "method":"insertRows",
+                        "conditions":[
+                            {
+                                "left":"{global.adddata}",
+                                "symbol":"non-empty",
+                                "right":""
+                            }
+                        ]
+                    }
+                ])
             );
             
             append(
