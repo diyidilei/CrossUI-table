@@ -132,18 +132,12 @@ xui.Class('App', 'xui.Module',{
                     {
                         "desc":"打开输入框",
                         "type":"other",
-                        "target":"msg",
-                        "args":[
-                            "{xui.broadcast()}",
-                            undefined,
-                            undefined,
-                            "id"
-                        ],
-                        "method":"gbroadcast",
-                        "okFlag":"_prompt_ok",
-                        "koFlag":"_prompt_cancel",
-                        "event":1,
-                        "redirection":"other:callback:call"
+                        "target":"url",
+                        "args":[ ],
+                        "method":"open----_self",
+                        "okFlag":"_DI_succeed",
+                        "koFlag":"_DI_fail",
+                        "event":1
                     }
                 ])
             );
