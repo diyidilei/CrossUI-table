@@ -147,6 +147,7 @@ xui.Class('App', 'xui.Module',{
                 .setTop("1.6666666666666667em")
                 .setWidth("61.666666666666664em")
                 .setHeight("35.833333333333336em")
+                .setVisibility("visible")
             );
             
             host.xui_ui_div26.append(
@@ -155,7 +156,7 @@ xui.Class('App', 'xui.Module',{
                 .setLeft("16.666666666666668em")
                 .setTop("10.833333333333334em")
                 .setHeight("20.833333333333332em")
-                .setVisibility("hidden")
+                .setDisplay("none")
                 .setCaption("添加数据")
                 .setMinBtn(false)
             );
