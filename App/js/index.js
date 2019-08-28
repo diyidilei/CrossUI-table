@@ -320,7 +320,9 @@ xui.Class('App', 'xui.Module',{
                         "method":"call"
                     },
                     function(){
-                        console.log(window);arent.window.drawMap()
+                        console.log(parent);
+                        console.log(window);
+                        parent.window.drawMap()
                     }
                 ]
             }
