@@ -89,7 +89,7 @@ xui.Class('App', 'xui.Module',{
                                 "value":"Group 44"
                             },
                             {
-                                "value":"46.444"
+                                "value":"119"
                             },
                             {
                                 "value":"18.999"
@@ -105,10 +105,10 @@ xui.Class('App', 'xui.Module',{
                                 "value":"黄蜂级导弹艇"
                             },
                             {
-                                "value":"124.111"
+                                "value":"120.22"
                             },
                             {
-                                "value":"100.488"
+                                "value":"35.666"
                             },
                             {
                                 "value":"绘制"
