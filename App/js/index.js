@@ -334,9 +334,7 @@ xui.Class('App', 'xui.Module',{
                     function(){
                         console.log(parent);
                         console.log(window);
-                        parent.window.frames[
-                            'draw'
-                        ].docdrawMap()
+                        parent.window.docdrawMap()
                     }
                 ]
             }
