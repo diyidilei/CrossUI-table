@@ -118,6 +118,48 @@ xui.Class('App', 'xui.Module',{
                 ])
             );
             
+            host.xui_ui_panel4.append(
+                xui.create("xui.UI.Dialog")
+                .setHost(host,"xui_ui_dialog2")
+                .setLeft("7em")
+                .setTop("11.333333333333334em")
+                .setCaption("对话框")
+                .setMinBtn(false)
+            );
+            
+            host.xui_ui_dialog2.append(
+                xui.create("xui.UI.Input")
+                .setHost(host,"xui_ui_input1")
+                .setDirtyMark(false)
+                .setLeft("-0.4166666666666667em")
+                .setTop("2.0833333333333335em")
+                .setWidth("18em")
+                .setLabelSize("8em")
+                .setLabelCaption("名称")
+            );
+            
+            host.xui_ui_dialog2.append(
+                xui.create("xui.UI.Input")
+                .setHost(host,"xui_ui_input2")
+                .setDirtyMark(false)
+                .setLeft("-0.4166666666666667em")
+                .setTop("4.583333333333333em")
+                .setWidth("18em")
+                .setLabelSize("8em")
+                .setLabelCaption("坐标经度")
+            );
+            
+            host.xui_ui_dialog2.append(
+                xui.create("xui.UI.Input")
+                .setHost(host,"xui_ui_input3")
+                .setDirtyMark(false)
+                .setLeft("-0.4166666666666667em")
+                .setTop("7.083333333333333em")
+                .setWidth("18em")
+                .setLabelSize("8em")
+                .setLabelCaption("坐标纬度")
+            );
+            
             append(
                 xui.create("xui.UI.Button")
                 .setHost(host,"xui_ui_button53")
