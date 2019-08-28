@@ -258,7 +258,7 @@ xui.Class('App', 'xui.Module',{
             append(
                 xui.create("xui.UI.HiddenInput")
                 .setHost(host,"xui_ui_hiddeninput1")
-                .setName("btn")
+                .setName("handle")
                 .setValue("绘制")
             );
             
