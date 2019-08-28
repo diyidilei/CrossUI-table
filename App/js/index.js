@@ -132,50 +132,10 @@ xui.Class('App', 'xui.Module',{
                     {
                         "desc":"打开对话框",
                         "type":"control",
-                        "target":"xui_ui_dialog2",
+                        "target":"xui_ui_dialog12",
                         "args":[ ],
-                        "method":"showModal",
+                        "method":"show",
                         "event":1
-                    },
-                    {
-                        "desc":"打开输入框",
-                        "type":"other",
-                        "target":"msg",
-                        "args":[
-                            "请输入您要添加到数据"
-                        ],
-                        "method":"prompt",
-                        "okFlag":"_prompt_ok",
-                        "koFlag":"_prompt_cancel",
-                        "event":1,
-                        "onOK":3,
-                        "onKO":4
-                    },
-                    {
-                        "desc":"增加数据",
-                        "type":"control",
-                        "target":"xui_ui_treegrid2",
-                        "args":[
-                            " {temp.okData}",
-                            null,
-                            null,
-                            false
-                        ],
-                        "method":"insertRows",
-                        "conditions":[
-                            {
-                                "left":" {temp.okData}",
-                                "symbol":"non-empty",
-                                "right":""
-                            }
-                        ]
-                    },
-                    {
-                        "desc":"关闭对话框",
-                        "type":"control",
-                        "target":"xui_ui_dialog2",
-                        "args":[ ],
-                        "method":"close"
                     }
                 ])
             );
@@ -183,18 +143,19 @@ xui.Class('App', 'xui.Module',{
             append(
                 xui.create("xui.UI.Div")
                 .setHost(host,"xui_ui_div26")
-                .setLeft("34.166666666666664em")
-                .setTop("17.5em")
-                .setWidth("27.5em")
-                .setHeight("20.833333333333332em")
+                .setLeft("0.8333333333333334em")
+                .setTop("1.6666666666666667em")
+                .setWidth("61.666666666666664em")
+                .setHeight("35.833333333333336em")
             );
             
             host.xui_ui_div26.append(
                 xui.create("xui.UI.Dialog")
                 .setHost(host,"xui_ui_dialog12")
-                .setLeft("3.3333333333333335em")
-                .setTop("5.833333333333333em")
+                .setLeft("16.666666666666668em")
+                .setTop("10.833333333333334em")
                 .setHeight("20.833333333333332em")
+                .setVisibility("hidden")
                 .setCaption("添加数据")
                 .setMinBtn(false)
             );
