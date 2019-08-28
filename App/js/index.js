@@ -136,7 +136,8 @@ xui.Class('App', 'xui.Module',{
                         "args":[ ],
                         "method":"show",
                         "event":1
-                    }
+                    },
+                    "_xui_ui_button53_onclick"
                 ])
             );
             
@@ -270,6 +271,17 @@ xui.Class('App', 'xui.Module',{
         customAppend : function(parent, subId, left, top){
             // "return false" will cause all the internal UI controls will be added to the parent panel
             return false;
+        },
+        /**
+         * 当鼠标单击时调用
+         * @method onClick [xui.UI.Button event]
+         * @param {xui.UIProfile} profile , 当前控件的配置对象(特征数据)
+         * @param {Event} e , DOM事件元素
+         * @param {String} src , 事件所属DOM元素的xid
+         * @param {Boolean} value , 值
+        */
+        _xui_ui_button53_onclick:function(profile, e, src, value){
+            var ns = this, uictrl = profile.boxing();
         }
         /*,
         // To determine how properties affects this module
