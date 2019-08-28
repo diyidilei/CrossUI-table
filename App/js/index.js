@@ -134,15 +134,16 @@ xui.Class('App', 'xui.Module',{
                         "type":"other",
                         "target":"msg",
                         "args":[
-                            "12312",
-                            "请输入\n"
+                            "{xui.broadcast()}",
+                            undefined,
+                            undefined,
+                            "id"
                         ],
-                        "method":"prompt",
+                        "method":"gbroadcast",
                         "okFlag":"_prompt_ok",
                         "koFlag":"_prompt_cancel",
-                        "onOK":3,
-                        "onKO":4,
-                        "event":1
+                        "event":1,
+                        "redirection":"other:callback:call"
                     }
                 ])
             );
