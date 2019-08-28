@@ -245,32 +245,24 @@ xui.Class('App', 'xui.Module',{
                 .setCaption("添加")
                 .onClick([
                     {
-                        "desc":"打开弹出层",
-                        "type":"control",
-                        "target":"xui_ui_dialog2",
-                        "args":[ ],
-                        "method":"show",
-                        "event":1
-                    },
-                    {
                         "desc":"储存数据",
                         "type":"control",
-                        "target":"xui_ui_dialog2",
+                        "target":"xui_ui_dialog12",
                         "args":[
-                            "{page.xui_ui_dialog2.getFormValues()}",
+                            "{page.xui_ui_dialog12.getFormValues()}",
                             "global",
-                            "adddata"
+                            "data"
                         ],
                         "method":"getFormValues",
-                        "redirection":"other:callback:call",
-                        "event":1
+                        "event":1,
+                        "redirection":"other:callback:call"
                     },
                     {
                         "desc":"增加表格",
                         "type":"control",
                         "target":"xui_ui_treegrid2",
                         "args":[
-                            "{global.adddata}",
+                            "{global.data}",
                             null,
                             null,
                             false
@@ -278,7 +270,7 @@ xui.Class('App', 'xui.Module',{
                         "method":"insertRows",
                         "conditions":[
                             {
-                                "left":"{global.adddata}",
+                                "left":"{global.data}",
                                 "symbol":"non-empty",
                                 "right":""
                             }
@@ -287,7 +279,7 @@ xui.Class('App', 'xui.Module',{
                     {
                         "desc":"关闭弹出层",
                         "type":"control",
-                        "target":"xui_ui_dialog2",
+                        "target":"xui_ui_dialog12",
                         "args":[ ],
                         "method":"close"
                     }
