@@ -195,7 +195,7 @@ xui.Class('App', 'xui.Module',{
                 .setLeft("3.3333333333333335em")
                 .setTop("5.833333333333333em")
                 .setHeight("20.833333333333332em")
-                .setCaption("对话框")
+                .setCaption("添加数据")
                 .setMinBtn(false)
             );
             
@@ -239,7 +239,7 @@ xui.Class('App', 'xui.Module',{
                 xui.create("xui.UI.HTMLButton")
                 .setHost(host,"xui_ui_htmlbutton12")
                 .setLeft("7.916666666666667em")
-                .setTop("12.083333333333334em")
+                .setTop("12.916666666666666em")
                 .setWidth("8.25em")
                 .setHeight("3.0833333333333335em")
                 .setCaption("添加")
@@ -284,6 +284,19 @@ xui.Class('App', 'xui.Module',{
                         "method":"close"
                     }
                 ])
+            );
+            
+            host.xui_ui_dialog12.append(
+                xui.create("xui.UI.Input")
+                .setHost(host,"xui_ui_input48")
+                .setName("handle")
+                .setDirtyMark(false)
+                .setLeft("1.25em")
+                .setTop("10.416666666666666em")
+                .setWidth("18em")
+                .setLabelSize("8em")
+                .setLabelCaption("操作")
+                .setValue("绘制")
             );
             
             return children;
