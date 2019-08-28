@@ -118,18 +118,6 @@ xui.Class('App', 'xui.Module',{
                 ])
                 .afterRowActive([
                     {
-                        "desc":"获取变量",
-                        "type":"control",
-                        "target":"xui_ui_treegrid2",
-                        "args":[
-                            "{page.xui_ui_treegrid2.getActiveRow()}",
-                            "global",
-                            "item"
-                        ],
-                        "method":"getActiveRow",
-                        "redirection":"other:callback:call"
-                    },
-                    {
                         "desc":"调用函数",
                         "type":"other",
                         "target":"callback",
@@ -137,7 +125,7 @@ xui.Class('App', 'xui.Module',{
                             "{page.functions.draw}",
                             "none",
                             "",
-                            "{global.item}"
+                            "{page.treegrid.getRowMap()}"
                         ],
                         "method":"call"
                     },
