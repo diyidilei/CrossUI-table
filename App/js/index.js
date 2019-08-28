@@ -116,7 +116,7 @@ xui.Class('App', 'xui.Module',{
                         ]
                     }
                 ])
-                .onRowSelected([
+                .onClickRow([
                     {
                         "desc":"动作 1",
                         "type":"other",
