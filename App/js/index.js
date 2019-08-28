@@ -128,6 +128,23 @@ xui.Class('App', 'xui.Module',{
                 .setHeight("3.6666666666666665em")
                 .setCaption("添加数据")
                 .setFontSize("14px")
+                .onClick([
+                    {
+                        "desc":"打开输入框",
+                        "type":"other",
+                        "target":"msg",
+                        "args":[
+                            "12312",
+                            "请输入\n"
+                        ],
+                        "method":"prompt",
+                        "okFlag":"_prompt_ok",
+                        "koFlag":"_prompt_cancel",
+                        "onOK":3,
+                        "onKO":4,
+                        "event":1
+                    }
+                ])
             );
             
             return children;
