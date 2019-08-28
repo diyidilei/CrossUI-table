@@ -271,6 +271,18 @@ xui.Class('App', 'xui.Module',{
                 .setWidth("12.333333333333334em")
                 .setHeight("4.333333333333333em")
                 .setCaption("绘制")
+                .onClick([
+                    {
+                        "desc":"动作 1",
+                        "type":"other",
+                        "target":"callback",
+                        "args":[
+                            "{page.functions.draw}"
+                        ],
+                        "method":"call",
+                        "event":1
+                    }
+                ])
             );
             
             return children;
