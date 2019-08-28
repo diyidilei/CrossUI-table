@@ -239,7 +239,7 @@ xui.Class('App', 'xui.Module',{
                 xui.create("xui.UI.HTMLButton")
                 .setHost(host,"xui_ui_htmlbutton12")
                 .setLeft("7.916666666666667em")
-                .setTop("12.916666666666666em")
+                .setTop("12.083333333333334em")
                 .setWidth("8.25em")
                 .setHeight("3.0833333333333335em")
                 .setCaption("添加")
