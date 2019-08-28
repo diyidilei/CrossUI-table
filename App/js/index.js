@@ -139,10 +139,10 @@ xui.Class('App', 'xui.Module',{
                 .setDirtyMark(false)
                 .setLeft("19.166666666666668em")
                 .setTop("40.833333333333336em")
-                .setWidth("13.166666666666666em")
-                .setHeight("3.6666666666666665em")
+                .setWidth("23.166666666666668em")
+                .setHeight("4.5em")
                 .setCaption("添加数据")
-                .setFontSize("14px")
+                .setFontSize("16px")
                 .onClick([
                     {
                         "desc":"打开对话框",
