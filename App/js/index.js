@@ -73,10 +73,10 @@ xui.Class('App', 'xui.Module',{
                                 "value":"海南级猎潜艇"
                             },
                             {
-                                "value":"19.153"
+                                "value":"118.4"
                             },
                             {
-                                "value":"156.888"
+                                "value":"35.1"
                             },
                             {
                                 "value":"绘制"
