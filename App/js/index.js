@@ -122,11 +122,11 @@ xui.Class('App', 'xui.Module',{
                         "type":"control",
                         "target":"xui_ui_treegrid2",
                         "args":[
-                            "{page.xui_ui_treegrid2.getHotRow()}",
+                            "{page.xui_ui_treegrid2.getActiveRow()}",
                             "global",
                             "item"
                         ],
-                        "method":"getHotRow",
+                        "method":"getActiveRow",
                         "redirection":"other:callback:call"
                     },
                     {
@@ -317,7 +317,7 @@ xui.Class('App', 'xui.Module',{
                     {
                         "id":"res",
                         "type":"Object",
-                        "desc":"{global.item}"
+                        "desc":""
                     }
                 ],
                 "actions":[
