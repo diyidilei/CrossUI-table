@@ -134,10 +134,14 @@ xui.Class('App', 'xui.Module',{
                         "type":"other",
                         "target":"callback",
                         "args":[
-                            "{page.functions.draw}"
+                            "{page.functions.draw}",
+                            "none",
+                            "",
+                            "{global.item}"
                         ],
                         "method":"call"
-                    }
+                    },
+                    "_xui_ui_treegrid2_afterrowactive"
                 ])
             );
             
@@ -332,7 +336,16 @@ xui.Class('App', 'xui.Module',{
                     }
                 ]
             }
-        }
+        },
+            /**
+         * 在行被激活后被调用
+         * @method afterRowActive [xui.UI.TreeGrid event]
+         * @param {xui.UIProfile} profile , 当前控件的配置对象(特征数据)
+         * @param {Object} row , 行对象
+        */
+            _xui_ui_treegrid2_afterrowactive:function(profile, row){
+                var ns = this, uictrl = profile.boxing();
+            }
         /*,
         // To determine how properties affects this module
         propSetAction : function(prop){
