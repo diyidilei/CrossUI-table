@@ -263,6 +263,16 @@ xui.Class('App', 'xui.Module',{
                 .setValue("绘制")
             );
             
+            append(
+                xui.create("xui.UI.HTMLButton")
+                .setHost(host,"xui_ui_htmlbutton30")
+                .setLeft("35em")
+                .setTop("41.666666666666664em")
+                .setWidth("12.333333333333334em")
+                .setHeight("4.333333333333333em")
+                .setCaption("绘制")
+            );
+            
             return children;
             // ]]Code created by CrossUI RAD Studio
         },
@@ -282,6 +292,26 @@ xui.Class('App', 'xui.Module',{
         */
         _xui_ui_button53_onclick:function(profile, e, src, value){
             var ns = this, uictrl = profile.boxing();
+        },
+        functions:{
+            "draw":{
+                "desc":"",
+                "params":[ ],
+                "actions":[
+                    {
+                        "desc":"动作 1",
+                        "type":"other",
+                        "target":"callback",
+                        "args":[
+                            "{functions.draw}"
+                        ],
+                        "method":"call"
+                    },
+                    function(){
+                        window.drawMap()
+                    }
+                ]
+            }
         }
         /*,
         // To determine how properties affects this module
