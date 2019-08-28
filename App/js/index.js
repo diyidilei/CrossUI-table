@@ -116,7 +116,7 @@ xui.Class('App', 'xui.Module',{
                         ]
                     }
                 ])
-                .onClickRow([
+                .afterRowActive([
                     {
                         "desc":"动作 1",
                         "type":"other",
@@ -124,8 +124,7 @@ xui.Class('App', 'xui.Module',{
                         "args":[
                             "{page.functions.draw}"
                         ],
-                        "method":"call",
-                        "event":2
+                        "method":"call"
                     }
                 ])
             );
