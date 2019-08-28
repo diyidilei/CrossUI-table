@@ -286,13 +286,6 @@ xui.Class('App', 'xui.Module',{
                 ])
             );
             
-            append(
-                xui.create("xui.UI.HiddenInput")
-                .setHost(host,"xui_ui_hiddeninput6")
-                .setName("handle")
-                .setValue("zuocao")
-            );
-            
             return children;
             // ]]Code created by CrossUI RAD Studio
         },
