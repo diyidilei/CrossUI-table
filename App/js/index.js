@@ -132,7 +132,7 @@ xui.Class('App', 'xui.Module',{
                     {
                         "desc":"打开对话框",
                         "type":"control",
-                        "target":"xui_ui_dialog12",
+                        "target":"xui_ui_input32",
                         "args":[ ],
                         "method":"show",
                         "event":1
