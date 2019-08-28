@@ -327,6 +327,7 @@ xui.Class('App', 'xui.Module',{
                         "method":"call"
                     },
                     function(res){
+                        console.log(res);
                         window.parent.document.getElementById("drap").contentWindow.drawMap(res)
                     }
                 ]
