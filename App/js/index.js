@@ -259,7 +259,7 @@ xui.Class('App', 'xui.Module',{
                         "type":"control",
                         "target":"xui_ui_dialog12",
                         "args":[ ],
-                        "method":"close"
+                        "method":"hide"
                     }
                 ])
             );
