@@ -25,9 +25,9 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"xui_ui_panel4")
                 .setDock("none")
                 .setLeft("12.5em")
-                .setTop("5em")
+                .setTop("1.6666666666666667em")
                 .setWidth("37.5em")
-                .setHeight("34.166666666666664em")
+                .setHeight("37.5em")
                 .setCaption("数据表格")
             );
             
@@ -121,8 +121,8 @@ xui.Class('App', 'xui.Module',{
             host.xui_ui_panel4.append(
                 xui.create("xui.UI.Dialog")
                 .setHost(host,"xui_ui_dialog2")
-                .setLeft("10.333333333333334em")
-                .setTop("10.5em")
+                .setLeft("5.333333333333333em")
+                .setTop("14.666666666666666em")
                 .setZIndex(1003)
                 .setCaption("对话框")
                 .setMinBtn(false)
