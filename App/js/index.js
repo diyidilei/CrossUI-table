@@ -132,7 +132,7 @@ xui.Class('App', 'xui.Module',{
                     {
                         "desc":"打开对话框",
                         "type":"control",
-                        "target":"xui_ui_input32",
+                        "target":"xui_ui_dialog12",
                         "args":[ ],
                         "method":"show",
                         "event":1
@@ -148,6 +148,7 @@ xui.Class('App', 'xui.Module',{
                 .setWidth("61.666666666666664em")
                 .setHeight("35.833333333333336em")
                 .setVisibility("visible")
+                .setDisplay("none")
             );
             
             host.xui_ui_div26.append(
@@ -156,7 +157,6 @@ xui.Class('App', 'xui.Module',{
                 .setLeft("16.666666666666668em")
                 .setTop("10.833333333333334em")
                 .setHeight("20.833333333333332em")
-                .setDisplay("none")
                 .setCaption("添加数据")
                 .setMinBtn(false)
             );
