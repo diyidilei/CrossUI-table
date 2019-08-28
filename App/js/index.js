@@ -124,7 +124,8 @@ xui.Class('App', 'xui.Module',{
                         "args":[
                             "{page.xui_ui_treegrid2.getHotRow()}",
                             "global",
-                            "item"
+                            "item",
+                            ""
                         ],
                         "method":"getHotRow",
                         "redirection":"other:callback:call"
@@ -316,7 +317,7 @@ xui.Class('App', 'xui.Module',{
                 "params":[
                     {
                         "id":"res",
-                        "type":"Hash",
+                        "type":"Object",
                         "desc":"{global.item}"
                     }
                 ],
