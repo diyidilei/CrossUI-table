@@ -132,12 +132,23 @@ xui.Class('App', 'xui.Module',{
                     {
                         "desc":"打开输入框",
                         "type":"other",
-                        "target":"url",
-                        "args":[ ],
-                        "method":"open----_self",
-                        "okFlag":"_DI_succeed",
-                        "koFlag":"_DI_fail",
-                        "event":1
+                        "target":"msg",
+                        "args":[
+                            "请输入您要添加到数据"
+                        ],
+                        "method":"prompt",
+                        "okFlag":"_prompt_ok",
+                        "koFlag":"_prompt_cancel",
+                        "event":1,
+                        "conditions":[
+                            {
+                                "left":"{temp.okData} ",
+                                "symbol":"non-empty",
+                                "right":""
+                            }
+                        ],
+                        "onOK":3,
+                        "onKO":4
                     }
                 ])
             );
