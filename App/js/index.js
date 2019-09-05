@@ -145,6 +145,7 @@ xui.Class('App', 'xui.Module',{
                 .setWidth("61.666666666666664em")
                 .setHeight("35.833333333333336em")
                 .setVisibility("visible")
+                .setDisplay("none")
             );
             
             host.xui_ui_div26.append(
