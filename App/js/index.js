@@ -110,18 +110,6 @@ xui.Class('App', 'xui.Module',{
                     }
                 ])
                 .afterRowActive([
-                    {
-                        "desc":"调用函数",
-                        "type":"other",
-                        "target":"callback",
-                        "args":[
-                            "{page.functions.draw}",
-                            "none",
-                            "",
-                            "{page.xui_ui_treegrid2.getRowMap()}"
-                        ],
-                        "method":"call"
-                    },
                     "_xui_ui_treegrid2_afterrowactive"
                 ])
             );
@@ -163,9 +151,10 @@ xui.Class('App', 'xui.Module',{
             host.xui_ui_div26.append(
                 xui.create("xui.UI.Dialog")
                 .setHost(host,"xui_ui_dialog12")
-                .setLeft("39.166666666666664em")
-                .setTop("15.833333333333334em")
+                .setLeft("9.166666666666666em")
+                .setTop("18.333333333333332em")
                 .setHeight("20.833333333333332em")
+                .setDisplay("none")
                 .setCaption("添加数据")
                 .setMinBtn(false)
             );
