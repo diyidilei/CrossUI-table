@@ -24,10 +24,10 @@ xui.Class('App', 'xui.Module',{
                 xui.create("xui.UI.Panel")
                 .setHost(host,"xui_ui_panel4")
                 .setDock("none")
-                .setLeft("11.666666666666666em")
-                .setTop("1.6666666666666667em")
-                .setWidth("37.5em")
-                .setHeight("37.5em")
+                .setLeft("14.166666666666666em")
+                .setTop("2.5em")
+                .setWidth("35em")
+                .setHeight("36.666666666666664em")
                 .setCaption("数据表格")
             );
             
@@ -44,26 +44,19 @@ xui.Class('App', 'xui.Module',{
                         "id":"name",
                         "caption":"名称",
                         "type":"label",
-                        "width":"9em"
+                        "width":"11em"
                     },
                     {
                         "id":"coordx",
                         "caption":"坐标经度",
                         "type":"label",
-                        "width":"8em"
+                        "width":"11em"
                     },
                     {
                         "id":"coordy",
                         "caption":"坐标纬度",
                         "type":"label",
-                        "width":"9.5em"
-                    },
-                    {
-                        "id":"handle",
-                        "caption":"操作",
-                        "type":"button",
-                        "width":"9em",
-                        "cellRenderer":""
+                        "width":"11em"
                     }
                 ])
                 .setRows([
@@ -79,7 +72,7 @@ xui.Class('App', 'xui.Module',{
                                 "value":"35.1"
                             },
                             {
-                                "value":"绘制"
+                                "value":""
                             }
                         ]
                     },
@@ -95,7 +88,7 @@ xui.Class('App', 'xui.Module',{
                                 "value":"18.999"
                             },
                             {
-                                "value":"绘制"
+                                "value":""
                             }
                         ]
                     },
@@ -111,7 +104,7 @@ xui.Class('App', 'xui.Module',{
                                 "value":"35.666"
                             },
                             {
-                                "value":"绘制"
+                                "value":""
                             }
                         ]
                     }
