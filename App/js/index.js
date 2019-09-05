@@ -291,33 +291,7 @@ xui.Class('App', 'xui.Module',{
         _xui_ui_button53_onclick:function(profile, e, src, value){
             var ns = this, uictrl = profile.boxing();
         },
-        functions:{
-            "draw":{
-                "desc":"",
-                "params":[
-                    {
-                        "id":"res",
-                        "type":"Object",
-                        "desc":""
-                    }
-                ],
-                "actions":[
-                    {
-                        "desc":"动作 1",
-                        "type":"other",
-                        "target":"callback",
-                        "args":[
-                            "{functions.draw}"
-                        ],
-                        "method":"call"
-                    },
-                    function(res){
-                        console.log(res);
-                        window.parent.document.getElementById("drap").contentWindow.drawMap(res)
-                    }
-                ]
-            }
-        },
+        functions:{ },
             /**
          * 在行被激活后被调用
          * @method afterRowActive [xui.UI.TreeGrid event]
