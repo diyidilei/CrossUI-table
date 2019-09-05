@@ -248,6 +248,13 @@ xui.Class('App', 'xui.Module',{
                         ]
                     },
                     {
+                        "desc":"清空表单",
+                        "type":"control",
+                        "target":"xui_ui_dialog12",
+                        "args":[ ],
+                        "method":"formClear"
+                    },
+                    {
                         "desc":"关闭弹出层",
                         "type":"control",
                         "target":"xui_ui_dialog12",
