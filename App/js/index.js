@@ -154,7 +154,7 @@ xui.Class('App', 'xui.Module',{
                 .setLeft("9.166666666666666em")
                 .setTop("18.333333333333332em")
                 .setHeight("20.833333333333332em")
-                .setDisplay("none")
+                .setDisplay("block")
                 .setCaption("添加数据")
                 .setMinBtn(false)
             );
