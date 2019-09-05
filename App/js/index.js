@@ -151,8 +151,8 @@ xui.Class('App', 'xui.Module',{
             host.xui_ui_div26.append(
                 xui.create("xui.UI.Dialog")
                 .setHost(host,"xui_ui_dialog12")
-                .setLeft("9.166666666666666em")
-                .setTop("18.333333333333332em")
+                .setLeft("36.666666666666664em")
+                .setTop("16.666666666666668em")
                 .setHeight("20.833333333333332em")
                 .setDisplay("block")
                 .setCaption("添加数据")
